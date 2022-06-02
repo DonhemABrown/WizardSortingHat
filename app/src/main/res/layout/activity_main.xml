@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black"
+    tools:context=".MainActivity">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        tools:itemCount="2"
+        android:layout_weight="1"
+        tools:listitem="@layout/wizard_list_item_layout"
+        android:layout_margin="20dp"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_above="@id/sort"
+        android:layout_marginBottom="-2dp"
+        android:textColor="@color/white"
+        android:text="Welcome to Hogwarts! To which house do you belong?" />
+
+    <Button
+        android:id="@+id/sort"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="sort" />
+
+    <ImageButton
+        android:id="@+id/gryf"
+        android:layout_width="170dp"
+        android:layout_height="225dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="-1dp"
+        android:contentDescription="@string/gryffindor"
+        android:src="@drawable/gryf" />
+
+    <ImageButton
+        android:id="@+id/huff"
+        android:layout_width="170dp"
+        android:layout_height="225dp"
+        android:contentDescription="@string/hufflepuff"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/huff" />
+
+
+    <ImageButton
+        android:id="@+id/rave"
+        android:layout_width="170dp"
+        android:layout_height="225dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="31dp"
+        android:contentDescription="@string/ravenclaw"
+        android:src="@drawable/ravenclaw2" />
+
+    <ImageButton
+        android:id="@+id/slyth"
+        android:layout_width="170dp"
+        android:layout_height="225dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="14dp"
+        android:layout_marginBottom="31dp"
+        android:contentDescription="@string/slytherin"
+        android:src="@drawable/slyth" />
+
+</RelativeLayout>

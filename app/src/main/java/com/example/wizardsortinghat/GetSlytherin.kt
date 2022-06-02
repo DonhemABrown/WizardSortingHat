@@ -47,7 +47,7 @@ class GetSlytherin : AppCompatActivity() {
         }
 
 
-        vm.allWizards?.observe(this, {
+        vm.allSlytherin?.observe(this, {
                 wizardList -> getWizards(wizardList)
         })
 

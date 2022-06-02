@@ -47,7 +47,7 @@ class GetRavenclaw : AppCompatActivity() {
         }
 
 
-        vm.allWizards?.observe(this, {
+        vm.allRavenclaw?.observe(this, {
                 wizardList -> getWizards(wizardList)
         })
 

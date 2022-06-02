@@ -48,7 +48,7 @@ class GetHufflepuff : AppCompatActivity() {
 
 
 
-        vm.allWizards?.observe(this, {
+        vm.allHufflepuff?.observe(this, {
                 wizardList -> getWizards(wizardList)
         })
 

@@ -13,6 +13,26 @@ class WizardRepository(context: Context) {
         return db?.selectWizards()
     }
 
+    fun getAllGryffindor(): LiveData<List<Wizards>>? {
+
+        return db?.selectGryffindor()
+    }
+
+    fun getAllHufflepuff(): LiveData<List<Wizards>>? {
+
+        return db?.selectHufflepuff()
+    }
+
+    fun getAllRavenclaw(): LiveData<List<Wizards>>? {
+
+        return db?.selectRavenclaw()
+    }
+
+    fun getAllSlytherin(): LiveData<List<Wizards>>? {
+
+        return db?.selectSlytherin()
+    }
+
     fun search(searchText: String): LiveData<List<Wizards>> {
         return search(searchText)
     }

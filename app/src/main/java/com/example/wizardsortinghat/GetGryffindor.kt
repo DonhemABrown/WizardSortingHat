@@ -48,7 +48,7 @@ class GetGryffindor : AppCompatActivity() {
 
 
 
-        vm.allWizards?.observe(this, {
+        vm.allGryffindor?.observe(this, {
                 wizardList -> getWizards(wizardList)
         })
 

@@ -15,21 +15,21 @@ interface WizardDao {
     //change to live data for viewmodel
     fun selectWizards(): LiveData<List<Wizards>>
 
-/*    @Query("select * from wizards where house = :gryffindor")
+  @Query("select * FROM wizards WHERE house = 'Gryffindor'")
     //change to live data for viewmodel
     fun selectGryffindor(): LiveData<List<Wizards>>
 
-    @Query("select * from wizards where house = :slytherin")
+    @Query("select * from wizards where house = 'Slytherin'")
     //change to live data for viewmodel
     fun selectSlytherin(): LiveData<List<Wizards>>
 
-    @Query("select * from wizards where house = :ravenclaw")
+    @Query("select * from wizards where house = 'Ravenclaw'")
     //change to live data for viewmodel
     fun selectRavenclaw(): LiveData<List<Wizards>>
 
-    @Query("select * from wizards where house = :hufflepuff")
+    @Query("select * from wizards where house = 'Hufflepuff'")
     //change to live data for viewmodel
-    fun selectHufflepuff(): LiveData<List<Wizards>>*/
+    fun selectHufflepuff(): LiveData<List<Wizards>>
 
     //update
     @Update
